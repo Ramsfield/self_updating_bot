@@ -15,7 +15,7 @@ group = app_commands.Group(name="system", description="System Commands")
 
 @group.command(name="ping", description="Returns Pong")
 async def ping(inter: discord.Interaction) -> None:
-	await inter.response.send_message(f"Pong! ({round(bot.latency * 1000)}ms)")
+	await inter.response.send_message(f"Pong! ({round(bot.latency * 1000)}ms) WITH A CHANGE")
 
 @group.command(name="update", description="Updates the bot")
 async def update(inter: discord.Interaction) -> None:
