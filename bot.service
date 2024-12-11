@@ -1,0 +1,9 @@
+[Unit]
+Description=Silly Bot
+
+[Service]
+ExecStart="/bin/bash /home/ramsfield/Documents/repos/self_updating_bot/botStartup.sh"
+Restart=always
+
+[Install]
+WantedBy=default.target
