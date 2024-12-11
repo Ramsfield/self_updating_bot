@@ -2,7 +2,11 @@
 Description=Silly Bot
 
 [Service]
-ExecStart="/bin/bash /home/ramsfield/Documents/repos/self_updating_bot/botStartup.sh"
+# PLEASE FIX PATHING AND USER ID
+ExecStart="/home/ramsfield/Documents/repos/self_updating_bot/botStartup.sh"
+# This can be found by using `id` on the commandline
+User=1000
+Group=984
 Restart=always
 
 [Install]
